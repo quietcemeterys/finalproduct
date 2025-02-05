@@ -7,10 +7,10 @@
     <style>
         
         body {
-            background-color: rgb(255, 255, 255); /* Change the background color */
-            color: rgb(247, 216, 233); /* Change the text color */
-            font-family: 'Times New Roman', sans-serif; /* Change the font */
-            font-size: 15px; /* Change the font size */
+            background-color: rgb(255, 255, 255); 
+            color: rgb(247, 216, 233); 
+            font-family: 'Times New Roman', sans-serif; 
+            font-size: 15px; 
             margin: 0;
             padding: 0;
             height: 100%;
@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             animation: fadeIn 2s ease-in;
-            overflow: hidden; /* Allow scrollbars */
+            overflow: hidden; 
 
         }
         div {
@@ -32,22 +32,22 @@
         #buttonContainer {
             display: flex;
             justify-content: center;
-            gap: 10px; /* Space between buttons */
+            gap: 10px; 
         }   
         #topImage {
-            max-width: 100%; /* Ensure the image fits within the container */
+            max-width: 100%; 
             height: auto;
-            margin-bottom: 30px; /* Add some space below the image */
+            margin-bottom: 30px; 
         }
         #question {
-            color: rgb(184, 138, 108); /* Change the color */
-            font-family: 'Times New Roman', sans-serif; /* Change the font */
-            font-size: 35px; /* Change the font size */
+            color: rgb(184, 138, 108); 
+            font-family: 'Times New Roman', sans-serif; 
+            font-size: 35px; 
             animation: fadeIn 3s ease-in;
         }
         #yesButton, #noButton {
-            background-color: rgb(184, 138, 108); /* Change the color */
-            border: rgb(0, 0, 0); /* Change the border color */
+            background-color: rgb(184, 138, 108); 
+            border: rgb(0, 0, 0);
             color: white;
             padding: 6px 13px;
             text-align: center;
@@ -58,10 +58,10 @@
             margin: 4px 2px;
             cursor: pointer;
             border-radius: 7px;
-            transition: background-color 0.3s; /* Smooth transition */
+            transition: background-color 0.3s; 
         }
         #yesButton:hover, #noButton:hover {
-            background-color:rgb(163, 129, 107); /* Change color on hover */
+            background-color:rgb(163, 129, 107);
         }
         #noButton {
             position: relative;
@@ -75,22 +75,22 @@
             height: 100%;
             z-index: 1000;
         }
-        /* Modal styles */
+       
         .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1001; /* Sit on top */
+            display: none; 
+            position: fixed; 
+            z-index: 1001; 
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgb(255, 195, 235); /* Black w/ opacity */
+            overflow: hidden; 
+            background-color: rgb(0,0,0); 
+            background-color: rgb(255, 195, 235); 
         }
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto; /* 15% from the top and centered */
+            margin: 15% auto; 
             padding: 20px;
             border: 1px solid #888;
             width: 80%; 
@@ -248,8 +248,8 @@
             heart.className = 'heart';
             heart.style.left = Math.random() * 100 + 'vw';
             heart.style.animationDuration = Math.random() * 2 + 3 + 's';
-            heart.style.width = Math.random() * 50 + 50 + 'px'; // Random width between 50px and 100px
-            heart.style.height = heart.style.width; // Keep height equal to width
+            heart.style.width = Math.random() * 50 + 50 + 'px'; 
+            heart.style.height = heart.style.width;
             heart.addEventListener('animationend', () => {
                 heart.style.animation = 'none';
                 heart.style.bottom = '0';
